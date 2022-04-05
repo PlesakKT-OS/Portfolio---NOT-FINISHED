@@ -1,4 +1,5 @@
 //About Me Text Display
+
 const aboutMeText = document.querySelector(".about-me-text");
 const aboutMeTextContent =
   "I am a frontend developer in the making. With a great desire to learn new technologies as well as new knowledge. I do everything with great motivation and with a CAN DO approach.";
@@ -24,7 +25,7 @@ projects.forEach((project, i) => {
   project.addEventListener("mouseleave", () => {
     project.firstElementChild.style.top = "2rem";
   });
-  //Show Only 6 Projects
+  //Show Only 3 Projects
   if (i >= 3) {
     project.style.cssText = "display:none;opacity:0";
   }
@@ -67,11 +68,12 @@ document.querySelectorAll(".skills-btn").forEach((skill) => {
 //Navigation scroll-event
 const menuIcon = document.querySelector(".menu-icon");
 const navbar = document.querySelector(".navbar");
+const heightOfSection1 = document.querySelector(".section-1").offsetHeight;
 
 document.addEventListener("scroll", () => {
   menuIcon.classList.add("show-menu-icon");
   navbar.classList.add("hide-navbar");
-  if (window.scrollY == 0) {
+  if (window.scrollY <= heightOfSection1) {
     menuIcon.classList.remove("show-menu-icon");
     navbar.classList.remove("hide-navbar");
   }
@@ -80,4 +82,28 @@ document.addEventListener("scroll", () => {
 menuIcon.addEventListener("click", () => {
   menuIcon.classList.remove("show-menu-icon");
   navbar.classList.remove("hide-navbar");
+});
+
+//Section 5
+const formHeading = document.querySelector(".form-heading");
+const formInputs = document.querySelectorAll(".contact-form-input");
+
+formInputs.forEach((input) => {
+  input.addEventListener("focus", () => {
+    formHeading.style.opacity = "0";
+    setTimeout(() => {
+      formHeading.textContent = `Your ${input.placeholder}`;
+      formHeading.style.opacity = "1";
+    }, 300);
+  });
+});
+
+formInputs.forEach((input) => {
+  input.addEventListener("blur", () => {
+    formHeading.style.opacity = "0";
+    setTimeout(() => {
+      formHeading.textContent = "Let`s Talk";
+      formHeading.style.opacity = "1";
+    }, 300);
+  });
 });
