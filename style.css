@@ -466,6 +466,24 @@ html {
   margin-bottom: 1rem;
 }
 
+/*Form validation*/
+.message {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #f55ef5;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin: 0 auto 1rem 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.error.message {
+  visibility: visible;
+  opacity: 1;
+}
+
 /*RESPONSIVE*/
 @media (max-width: 1500px) {
   .circle {
@@ -598,8 +616,5 @@ html {
   }
   .contact-form-input {
     width: 25rem;
-  }
-  .section-heading {
-    font-size: 1rem;
   }
 }
