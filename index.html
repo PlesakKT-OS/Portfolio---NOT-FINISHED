@@ -51,7 +51,25 @@
         <h4 class="featured-text featured-text-2">Developer</h4>
 
         <!- Main Button ->
-        <a href="www.google.com" class="main-btn">
+        <a href="#section-2" class="main-btn">
+          <div class="main-btn-content center">
+            <div class="main-btn-line"></div>
+            <div class="main-btn-line"></div>
+            <div class="main-btn-line"></div>
+            <span>About Me</span>
+          </div>
+        </a>
+      </section>
+
+      <!- Section2 - About Me Page ->
+      <section class="section-2" id="section-2">
+        <!-Section2 Heading->
+        <h1 class="section-2-heading featured-text">About Me</h1>
+
+        <!-About Me Text->
+        <p class="about-me-text"></p>
+        <!- Main Button ->
+        <a href="#section-3" class="main-btn">
           <div class="main-btn-content center">
             <div class="main-btn-line"></div>
             <div class="main-btn-line"></div>
@@ -61,34 +79,16 @@
         </a>
       </section>
 
-      <!- Section2 - About Me Page ->
-      <section class="section-2" id="section-2">
-        <!-Section2 Heading->
-        <h1 class="section-2-heading">About Me</h1>
-
-        <!-About Me Text->
-        <p class="about-me-text"></p>
-        <!- Main Button ->
-        <a href="www.google.com" class="main-btn">
-          <div class="main-btn-content center">
-            <div class="main-btn-line"></div>
-            <div class="main-btn-line"></div>
-            <div class="main-btn-line"></div>
-            <span>Let's Talk</span>
-          </div>
-        </a>
-      </section>
-
       <!- Section3 - My Projects Page ->
       <section class="section-3" id="section-3">
         <!- Section3 Heading->
-        <h1 class="section-3-heading my-work-text">My Work</h1>
+        <h1 class="section-3-heading my-work-text featured-text">My Work</h1>
 
         <!- Section3 Projects->
         <div class="projects center">
-          <div class="project">
+          <a href="#section-1" class="project">
             <img src="images/projects/project-1.jpg" />
-          </div>
+          </a>
           <div class="project">
             <img src="images/projects/project-2.jpg" />
           </div>
@@ -131,39 +131,39 @@
 
       <section class="section-4" id="section-4">
         <!- Section 4 Skills&Education Page ->
-        <h1 class="section-4-heading">Skills</h1>
+        <h1 class="section-4-heading featured-text">Skills</h1>
 
-        <!- Skills ->
         <div class="skills-wrapper center">
+          <!- Skills ->
           <div class="skills">
-            <a href="#" class="skills-btn"><span>HTML</span></a>
+            <button class="skills-btn"><span>HTML</span></button>
             <p class="skill-text">
               Familiar with most of the HTML elements and ther use in building
               creative and modern websites.
             </p>
           </div>
           <div class="skills">
-            <a href="#" class="skills-btn"><span>CSS</span></a>
+            <button class="skills-btn"><span>CSS</span></button>
             <p class="skill-text">
               Familiar with most of the CSS elements and ther use in building
               creative and modern websites.
             </p>
           </div>
           <div class="skills">
-            <a href="#" class="skills-btn"><span>Bootstrap</span></a>
+            <button class="skills-btn"><span>Bootstrap</span></button>
             <p class="skill-text">
               Familiar with using Bootstrap tehnology on a basic level.
             </p>
           </div>
           <div class="skills">
-            <a href="#" class="skills-btn"><span>JavaScript</span></a>
+            <button class="skills-btn"><span>JavaScript</span></button>
             <p class="skill-text">
               Familiar with basic levels of JavaScript, while trying to learn
               more, and get more advanced with it.
             </p>
           </div>
           <div class="skills">
-            <a href="#" class="skills-btn"><span>Jquery</span></a>
+            <button class="skills-btn"><span>Jquery</span></button>
             <p class="skill-text">
               Familiar with basic levels of Jquery, while trying to learn more,
               and get more advanced with it.
@@ -171,7 +171,7 @@
           </div>
           <!- Education ->
           <div class="skills">
-            <a href="#" class="skills-btn"><span>Education</span></a>
+            <button class="skills-btn"><span>Education</span></button>
             <p class="skill-text">
               I graduated from high school with a degree in computer technician
               with excellent success. I am currently a final year undergraduate
@@ -180,6 +180,56 @@
               have one exam left until I finish my studies.
             </p>
           </div>
+        </div>
+      </section>
+
+      <!- Section 5 Contact Page ->
+      <section class="section-5 center" id="section-5">
+        <h1 class="section-heading">Contact Me</h1>
+
+        <div class="form-wrapper">
+          <h2 class="form-heading">Let's Talk</h2>
+          <form class="contact-form center">
+            <input type="text" class="contact-form-input" placeholder="Name" />
+            <input
+              type="email"
+              class="contact-form-input"
+              placeholder="Email"
+            />
+            <input
+              type="text"
+              class="contact-form-input"
+              placeholder="Subject"
+            />
+            <textarea
+              class="contact-form-input contact-form-textarea"
+              placeholder="Message"
+            ></textarea>
+            <input type="submit" class="form-submit-btn" value="Send Request" />
+          </form>
+        </div>
+
+        <!-SlideShow->
+        <div class="socialmedia center">
+          <a href="https://github.com/PlesakKT-OS" class="socialmedia-link">
+            <img
+              class="github"
+              src="images/social-icons/github-icon-1-logo.svg"
+            />
+          </a>
+          <a
+            href="https://www.facebook.com/matija.plesa.9"
+            class="socialmedia-link"
+          >
+            <img src="images/social-icons/socialmedia-img-2.png" />
+          </a>
+
+          <a
+            href="https://www.instagram.com/plesamatija/"
+            class="socialmedia-link"
+          >
+            <img src="images/social-icons/socialmedia-img-3.png" />
+          </a>
         </div>
       </section>
     </div>

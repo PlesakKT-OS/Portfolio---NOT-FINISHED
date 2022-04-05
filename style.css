@@ -47,9 +47,9 @@ html {
 }
 .menu-icon {
   position: fixed;
-  width: 12rem;
-  height: 7rem;
-  top: 0;
+  width: 24px;
+  height: 24px;
+  top: 50px;
   right: 6rem;
   flex-direction: column;
   opacity: 0;
@@ -59,10 +59,10 @@ html {
   cursor: pointer;
 }
 .menu-icon-line {
-  width: 6rem;
-  height: 0.2rem;
+  width: 24px;
+  height: 2.5px;
   background-color: #fff;
-  margin: 0.5rem 0;
+  margin: 2.5px 0;
   box-shadow: 0 0.3rem 0.5rem #000;
 }
 
@@ -248,16 +248,13 @@ html {
 @keyframes aboutMeTextAnimation {
   0% {
     color: #aaa;
-    top: 0;
   }
   10%,
   90% {
     color: #fff;
-    top: 2rem;
   }
   100% {
     color: #aaa;
-    top: 0;
   }
 }
 /*Section 2 Main Button*/
@@ -340,6 +337,7 @@ html {
   margin-top: 8rem;
   position: relative;
   width: 100%;
+  margin-bottom: 25rem;
 }
 .skills-wrapper {
   width: 100%;
@@ -354,6 +352,8 @@ html {
   position: relative;
   display: block;
   height: 6rem;
+  background: none;
+  border: none;
 }
 .skills-btn span {
   font-family: "Poppins", sans-serif;
@@ -363,13 +363,13 @@ html {
   color: #9b0e0e;
   position: absolute;
   right: 0;
+  top: 0;
 }
 .skill-text {
   font-size: 4rem;
   color: #777;
   letter-spacing: 0.1rem;
   height: 12rem;
-
   height: 0;
   visibility: hidden;
   opacity: 0;
@@ -377,8 +377,13 @@ html {
   transition: all 0.2s;
 }
 .change.skill-text {
-  height: 15rem;
+  margin-top: 2rem;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   visibility: visible;
+  filter: brightness(1.75);
   opacity: 1;
   transition: all 0.2s;
 }
@@ -394,4 +399,207 @@ html {
   width: 0;
   word-wrap: break-word;
   line-height: 4;
+}
+
+/*Section 5*/
+.section-5 {
+  position: relative;
+  height: 100vh;
+  flex-direction: column;
+}
+.form-heading {
+  font-family: "Poppins" sans-serif;
+  font-size: 6rem;
+  font-weight: 400;
+  color: #9b0e0e;
+  letter-spacing: 0.3rem;
+  margin-bottom: 3rem;
+  transition: opacity 0.3s;
+}
+.contact-form {
+  flex-direction: column;
+}
+.contact-form-input {
+  width: 60rem;
+  padding: 0.5rem;
+  margin: 1rem 0;
+  background-color: rgb(255, 255, 255, 0.1);
+  border: 0.1rem solid #9b0e0e;
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #aaa;
+  letter-spacing: 0.1rem;
+  height: 5rem;
+}
+.contact-form-textarea {
+  height: 20rem;
+  resize: none;
+}
+.form-submit-btn {
+  width: 20rem;
+  height: 5rem;
+  background-color: #9b0e0e;
+  border: none;
+  align-self: flex-start;
+  font-size: 1.8rem;
+  color: #fff;
+}
+/*SLIDESHOW*/
+.socialmedia {
+  display: flex;
+  width: 50rem;
+  margin-top: 10rem;
+  padding: 0 2rem;
+}
+.socialmedia-link {
+  width: 20%;
+}
+.socialmedia-link img {
+  width: 100%;
+  padding: 0 1rem;
+}
+
+.github {
+  filter: brightness(10);
+  height: 6rem;
+  width: 6rem;
+  margin-bottom: 1rem;
+}
+
+/*RESPONSIVE*/
+@media (max-width: 1500px) {
+  .circle {
+    width: 12rem;
+    height: 12rem;
+  }
+  .main-circle {
+    width: 25rem;
+    height: 25rem;
+  }
+  .main-circle img {
+    width: 100%;
+    height: 100%;
+  }
+  .about-me-text span {
+    font-size: 5rem;
+  }
+  .section-4 {
+    margin-bottom: 10rem;
+  }
+  .skills-btn span {
+    font-size: 5rem;
+  }
+  .skill-text {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 1200px) {
+  .about-me-text span {
+    font-size: 3.5rem;
+  }
+  .section-4 {
+    margin-bottom: 30rem;
+  }
+  .main-btn {
+    width: 11.5rem;
+    height: 11.5rem;
+  }
+  .featured-text {
+    font-size: 1rem;
+  }
+  .main-btn {
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .about-me-text span {
+    font-size: 3rem;
+  }
+  .skills-btn span {
+    font-size: 3rem;
+  }
+  .skill-text {
+    font-size: 2rem;
+  }
+  .skills {
+    margin: 0.5rem 0;
+  }
+  .featured-text {
+    font-size: 1rem;
+  }
+  .main-btn {
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .circles {
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .main-circle {
+    height: 15rem;
+    width: 15rem;
+  }
+  .navbar-link {
+    font-size: 1rem;
+  }
+  .logo {
+    font-size: 1rem;
+  }
+  .skill-text {
+    font-size: 1.5rem;
+    margin-left: 5rem;
+  }
+  .contact-form-input {
+    width: 50rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar-link {
+    margin: 0 0.5rem;
+  }
+  .about-me-text span {
+    font-size: 2rem;
+  }
+  .contact-form-input {
+    width: 40rem;
+  }
+}
+@media (max-width: 480px) {
+  .page-bg {
+    height: 100%;
+  }
+  .featured-text-1 {
+    margin-left: 5rem;
+  }
+  .featured-text-2 {
+    margin: 0 0 0 2rem;
+  }
+  .navbar {
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .about-me-text span {
+    font-size: 1.5rem;
+  }
+  .featured-text {
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .contact-form-input {
+    width: 25rem;
+  }
+  .section-heading {
+    font-size: 1rem;
+  }
 }
