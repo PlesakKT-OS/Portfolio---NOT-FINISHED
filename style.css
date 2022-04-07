@@ -26,6 +26,7 @@ html {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(images/bg.jpg) center no-repeat;
   background-size: cover;
+  filter: brightness(2);
 }
 /*NAVIGATION*/
 .navbar {
@@ -130,7 +131,7 @@ html {
   background: url(images/landing/circle-4-img.png) center no-repeat;
   background-size: 100%;
   background-clip: content-box;
-  mix-blend-mode: lighten;
+  filter: brightness(10);
 }
 .main-circle {
   width: 42rem;
@@ -464,6 +465,10 @@ html {
   height: 6rem;
   width: 6rem;
   margin-bottom: 1rem;
+}
+.cv-online {
+  border-radius: 25%;
+  margin-left: 1.5rem;
 }
 
 /*Form validation*/
