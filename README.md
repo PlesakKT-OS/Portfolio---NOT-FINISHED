@@ -1,6 +1,3 @@
 # Portfolio
 
-This is my portfolio page. I made it for pratice and to show my knowledge in frontend development.
-With goal to get intership, or maybe a job.
-
-Matija Pleša.
+GITHUB PAGES - https://plesakkt-os.github.io/Portfolio---NOT-FINISHED/
